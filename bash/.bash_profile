@@ -1,5 +1,6 @@
-export PATH=/usr/local/bin:$PATH
-
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+if [ -f $(brew --prefix)/etc/bash_completion  ]; then
+      . $(brew --prefix)/etc/bash_completion
 fi
+
+alias mysqlstart='mysql.server start'
+alias mysqlstop='mysql.server stop'
