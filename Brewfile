@@ -1,4 +1,4 @@
-tap fiskroom/cask'
+tap 'fiskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 brew 'bash-completion'
