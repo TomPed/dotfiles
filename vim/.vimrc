@@ -25,6 +25,8 @@ Bundle 'altercation/vim-colors-solarized'
 
 Bundle 'ternjs/tern_for_vim'
 
+Plugin 'airblade/vim-gitgutter'
+
 call vundle#end()            " required
 
 filetype plugin indent on    " required
@@ -65,10 +67,6 @@ let g:javascript_plugin_jsdoc = 1
 " Faster Git Dif
 set updatetime=750
 
-" Change location of swap files
-set swapfile
-set dir=~/tmp
-
 " Get the absolute number
 set number
 
@@ -87,6 +85,6 @@ if &term =~ '^screen'
 endif
 
 " ctrlp
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|coverage'
 let g:ctrlp_show_hidden = 1
 
