@@ -11,28 +11,23 @@ Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'scrooloose/nerdtree'
 
-Plugin 'ctrlpvim/ctrlp.vim'
-
 Plugin 'pangloss/vim-javascript'
+
+Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'bronson/vim-trailing-whitespace'
 
-Plugin 'valloric/youcompleteme'
-
-Bundle 'myusuf3/numbers.vim'
-
-Bundle 'altercation/vim-colors-solarized'
-
-Bundle 'ternjs/tern_for_vim'
-
-Plugin 'airblade/vim-gitgutter'
+Plugin 'dracula/vim'
 
 call vundle#end()            " required
 
 filetype plugin indent on    " required
 
-" Tabs
 set expandtab
+
+syntax on
+
+set relativenumber
 
 " For Makefile
 :inoremap <S-Tab> <C-V><Tab>
@@ -52,10 +47,6 @@ set ai " Auto indent
 set si " Smart indent
 set nowrap " Don't wrap lines
 
-" Colors
-syntax enable
-set background=dark
-colorscheme solarized
 
 " For NERDTree
 map <C-n> :NERDTreeToggle<CR>
