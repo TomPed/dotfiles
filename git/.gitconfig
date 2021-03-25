@@ -3,7 +3,7 @@
 	smudge = git-lfs smudge %f
 	required = true
 [user]
-	name = Thomas Pedbereznak
+	name = Tom Ped
 	email = tom@tomped.com
 [core]
 	excludesfile = /Users/tomped/.gitignore_global
